@@ -17,8 +17,8 @@
                 <th>Results</th>
             </tr>
         </thead>
-        <tr th:each="job: ${columnChoices.value}">
-            <td th:text="${job.value}"></td>
+        <tr th:each="item : ${columnChoices}">
+            <td th:text="${item}"></td>
         </tr>
     </table>
 
