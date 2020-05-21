@@ -17,9 +17,11 @@
                 <th>Results</th>
             </tr>
         </thead>
-        <tr th:each="item : ${columnChoices}">
-            <td th:text="${item}"></td>
-        </tr>
+        <tblock th:each="item : ${tableChoices}">
+            <tr>
+            <td th:text="${item.getValue()}"></td>
+            </tr>
+        </tblock>
     </table>
 
 </div>
